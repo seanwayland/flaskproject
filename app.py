@@ -24,6 +24,13 @@ def return_files_tut():
 	except Exception as e:
 		return str(e)
 
+@app.route('/return-all_charts/')
+def return_all_charts():
+	try:
+		return send_file('sean_wayland_pdfs_jan26_2022.zip')
+	except Exception as e:
+		return str(e)
+
 @app.route('/return-skinny-files/')
 def return_files_skinny():
         try:
